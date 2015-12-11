@@ -1,5 +1,6 @@
 import 'package:grinder/grinder.dart';
 import 'package:grinder/src/utils.dart';
+import 'dart:io';
 
 void main(List<String> args) {
   grind(args);
@@ -10,7 +11,7 @@ void main(List<String> args) {
 void prepush() {}
 
 @Task()
-@Depends(analyze, test, testdartfmt)
+@Depends(analyze, test, testdartfmt, coverage)
 void bot() {}
 
 @Task()
@@ -34,5 +35,24 @@ void format() {
 void testdartfmt() {
   if (DartFmt.dryRun(existingSourceDirs)) {
     throw "dartfmt failure";
+  }
+}
+
+@Task('Gather and send coverage data.')
+void coverage() {
+  final String coverageToken = Platform.environment['COVERAGE_TOKEN'];
+  if (coverageToken != null) {
+    PubApp coverallsApp = new PubApp.global('dart_coveralls');
+    coverallsApp.run([
+      'report',
+      '--retry',
+      '2',
+      '--exclude-test-files',
+      '--token',
+      coverageToken,
+      'test/expand_path_test.dart'
+    ]);
+  } else {
+    log('Skipping coverage task: no environment variable `COVERAGE_TOKEN` found.');
   }
 }
