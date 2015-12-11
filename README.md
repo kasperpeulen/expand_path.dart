@@ -29,7 +29,6 @@ Please file feature requests and bugs at the [issue tracker][tracker].
 
 [MIT][license]
 
-[tracker]: https://github.com/kasperpeulen/expand_path
+[tracker]: https://github.com/kasperpeulen/expand_path/issues
 
-[license]: LICENSE
-
+[license]: https://github.com/kasperpeulen/expand_path.dart/blob/master/LICENSE
