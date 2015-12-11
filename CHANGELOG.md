@@ -1,6 +1,13 @@
 # Change Log for expand_path
 Bash-like tilde expansion for dart. Expands a leading tilde in a file path to the user home directory
 
+## [0.0.4](http://github.com/kasperpeulen/expand_path.dart/compare/0.0.3...0.0.4) - 2015-12-12
+
+### Docs
+* fix github links in README.md [d36fc7c](https://github.com/kasperpeulen/expand_path.dart/commit/d36fc7cc02c9e4496b05fd08085a14871c7848da)
+* add link to license badge [b235da5](https://github.com/kasperpeulen/expand_path.dart/commit/b235da562f11e58d951ac822df0e59608f29ca0f)
+* add license badge [d44420f](https://github.com/kasperpeulen/expand_path.dart/commit/d44420f766a298c59f4f9433d77f4b66501ff768)
+
 ## [0.0.3](http://github.com/kasperpeulen/expand_path.dart/compare/0.0.2...0.0.3) - 2015-12-12
 
 ### Chore
