@@ -22,4 +22,10 @@ void main() {
 
 Please file feature requests and bugs at the [issue tracker][tracker].
 
+## License
+
+[MIT][license]
+
 [tracker]: https://github.com/kasperpeulen/expand_path
+
+[license]: LICENSE
