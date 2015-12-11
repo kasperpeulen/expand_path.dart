@@ -53,6 +53,6 @@ void coverage() {
       'test/expand_path_test.dart'
     ]);
   } else {
-    log('Skipping coverage task: no environment variable `COVERAGE_TOKEN` found.');
+    log('Skipping coverage task: no environment variable `COVERALLS_TOKEN` found.');
   }
 }
