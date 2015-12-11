@@ -40,7 +40,7 @@ void testdartfmt() {
 
 @Task('Gather and send coverage data.')
 void coverage() {
-  final String coverageToken = Platform.environment['COVERAGE_TOKEN'];
+  final String coverageToken = Platform.environment['COVERALLS_TOKEN'];
   if (coverageToken != null) {
     PubApp coverallsApp = new PubApp.global('dart_coveralls');
     coverallsApp.run([
