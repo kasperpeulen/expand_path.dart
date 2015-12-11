@@ -1,5 +1,7 @@
 # expand_path.dart
 
+Bash-like tilde expansion for dart. Expands a leading tilde in a file path to the user home directory
+
 [![Build Status](https://travis-ci.org/kasperpeulen/expand_path.dart.svg?branch=master)](https://travis-ci.org/kasperpeulen/expand_path.dart)
 
 ## Usage
