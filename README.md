@@ -5,7 +5,7 @@ Bash-like tilde expansion for dart. Expands a leading tilde in a file path to th
 [![Build Status](https://travis-ci.org/kasperpeulen/expand_path.dart.svg?branch=master)](https://travis-ci.org/kasperpeulen/expand_path.dart)
 [![Coverage Status](https://coveralls.io/repos/kasperpeulen/expand_path.dart/badge.svg?branch=master&service=github)](https://coveralls.io/github/kasperpeulen/expand_path.dart?branch=master)
 [![Pub](https://img.shields.io/pub/v/expand_path.svg)](https://pub.dartlang.org/packages/expand_path)
-[![Documentation Status](https://img.shields.io/badge/dartdocs-latest-blue.svg)](https://www.dartdocs.org/documentation/expand_path/0.0.2/index.html)
+[![Documentation Status](https://img.shields.io/badge/dartdocs-latest-blue.svg)](https://www.dartdocs.org/documentation/expand_path/latest/index.html)
 
 ## Usage
 
