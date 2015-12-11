@@ -1,4 +1,5 @@
 import 'package:grinder/grinder.dart';
+import 'package:grinder/src/utils.dart';
 
 void main(List<String> args) {
   grind(args);
@@ -14,7 +15,9 @@ void bot() {}
 
 @Task()
 void analyze() {
-  new PubApp.global('tuneup')..run(['check']);
+  run('dartanalyzer',
+      arguments:
+          findDartSourceFiles(['lib', 'test', 'example', 'tool']).toList());
 }
 
 @Task()
