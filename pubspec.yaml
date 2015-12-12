@@ -2,7 +2,7 @@ name: expand_path
 description: Bash-like tilde expansion for dart. Expands a leading tilde in a file path to the user home directory
 author: Kasper Peulen <kasperpeulen@gmail.com>
 homepage: https://github.com/kasperpeulen/expand_path.dart
-version: 0.0.7
+version: 0.0.8
 environment:
   sdk: '>=1.13.0 <2.0.0'
 dev_dependencies:
